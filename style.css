@@ -1,0 +1,190 @@
+body {
+  background-color: #212529;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav{
+  color: #ffffff;
+}
+.navbar {
+  border: 1px solid #ffffff;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* « The magic. */
+}
+
+.navbar li {
+  display: inline; /* « More magic. */
+}
+
+.navbar a {
+  display: inline-block; /* « Last bit of magic. */
+  padding: 10px;
+  font-family: "Press Start 2P";
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h1, h4 {
+  color: #ffffff;
+  font-family: "Press Start 2P";
+}
+.about, nav {
+  font-family: "Marvel";
+  color: #ffffff;
+}
+
+.wallpaper {
+  width: 1440px;
+  height: 335px;
+  z-index: -1;
+  position: absolute;
+  top: 50px;
+}
+.computer{
+  top: 200px;
+  left: 550px;
+  position: absolute;
+}
+.about {
+  font-family: "Marvel";
+  color: #ffffff;
+  position: absolute;
+  top: 450px;
+  left: 600px;
+  line-height: 30px;
+}
+.aboutrectangle {
+  position: absolute;
+  left: 0;
+  top: 385px;
+  width: 1440px;
+  height: 310px;
+  background: #343A40;
+}
+.officers {
+  top: 700px;
+  left: 600px;
+  position: absolute;
+}
+.sethpic {
+  position: absolute;
+  top: 1050px;
+  left: 360px;
+  color: white;
+  font-family: "Marvel";
+}
+.mariampic {
+  position: absolute;
+  top: 1050px;
+  left: 660px;
+  color: white;
+  font-family: "Marvel";
+}
+.adaezepic {
+  position: absolute;
+  top: 1050px;
+  left: 1030px;
+  color: white;
+  font-family: "Marvel";
+}
+.seth {
+  position: absolute;
+  top: 800px;
+  height: 250px;
+  width: auto;
+  left: 300px;
+  border-radius: 20%;
+}
+.mariam {
+  position: absolute;
+  top: 800px;
+  height: 250px;
+  width: auto;
+  left: 600px;
+  border-radius: 20%;
+}
+.adaeze {
+  position: absolute;
+  top: 800px;
+  height: 250px;
+  width: auto;
+  left: 1000px;
+  border-radius: 20%;
+}
+.projectrectangle {
+  position: absolute;
+  left: 0;
+  top: 1300px;
+  width: 1440px;
+  height: 610px;
+  background: #343A40;
+}
+.projects {
+  top: 1300px;
+  left: 600px;
+  position: absolute;
+}
+.refurb {
+  position: absolute;
+  top: 1650px;
+  left: 260px;
+  color: white;
+  font-family: "Marvel";
+}
+.refurbishing {
+  width: auto;
+  height: 250px;
+  top: 1400px;
+  left: 300px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 20%;
+
+}
+.pep {
+  position: absolute;
+  top: 1650px;
+  left: 990px;
+  color: white;
+  font-family: "Marvel";
+}
+ .pepper {
+  width: auto;
+  height: 250px;
+  top: 1400px;
+  left: 940px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 20%;
+}
+.social {
+  position: absolute;
+  top: 1920px;
+  left: 550px;
+  z-index: 1;
+}
+.instagram {
+  position: absolute;
+  top: 2000px;
+  left: 600px;
+  height: 250px;
+  width: auto;
+}
+.follow {
+  position: absolute;
+  top: 2300px;
+  left: 350px;
+}
+.disclaimer {
+  position: absolute;
+  top: 2400px;
+  color: #ffffff;
+  font-family: "Marvel";
+  left: 550px;
+  line-height: 30px;
+  padding: 20px;
+}
