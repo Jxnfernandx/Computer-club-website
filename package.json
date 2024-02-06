@@ -1,0 +1,15 @@
+{
+  "name": "computer-club-website",
+  "version": "1.0.0",
+  "description": "This is the repo for Lone Star College Montgomery's very own Computer Club",
+  "main": "script.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
