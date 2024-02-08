@@ -8,13 +8,29 @@
 </head>
 <body>
     <nav>
-        <ul class="navbar">
+        <div class="logo">
+            Logo Here
+        </div>
+
+        <div id="burger-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 512 512">
+            <path d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1H61.1zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48H448c26.5 0 48 21.5 48 48s-21.5 48-48 48H64c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16H464c8.8 0 16 7.2 16 16v16c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V400z"/></svg>
+        </div>
+
+        <div id="hotdog-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 viewBox="0 0 512 512">
+            <path d="M488.6 23.4c31.2 31.2 31.2 81.9 0 113.1l-352 352c-31.2 31.2-81.9 31.2-113.1 0s-31.2-81.9 0-113.1l352-352c31.2-31.2 81.9-31.2 113.1 0zM443.3 92.7c-6.2-6.2-16.4-6.2-22.6 0c-12.5 12.5-23.8 15.1-37.5 17.6l-2.5 .4c-13.8 2.5-31.6 5.6-48 22c-16.7 16.7-20.9 36-24.1 50.9l0 0v0l-.2 1c-3.4 15.6-6 26.4-15.7 36.1s-20.5 12.3-36.1 15.7l-1 .2c-14.9 3.2-34.2 7.4-50.9 24.1s-20.9 36-24.1 50.9l-.2 1c-3.4 15.6-6 26.4-15.7 36.1c-9.2 9.2-18 10.8-32.7 13.4l0 0-.9 .2c-15.6 2.8-34.9 6.9-54.4 26.4c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0c12.5-12.5 23.8-15.1 37.5-17.6l2.5-.4c13.8-2.5 31.6-5.6 48-22c16.7-16.7 20.9-36 24.1-50.9l.2-1c3.4-15.6 6-26.4 15.7-36.1s20.5-12.3 36.1-15.7l1-.2c14.9-3.2 34.2-7.4 50.9-24.1s20.9-36 24.1-50.9l.2-1c3.4-15.6 6-26.4 15.7-36.1c9.2-9.2 18-10.8 32.7-13.4l.9-.2c15.6-2.8 34.9-6.9 54.4-26.4c6.2-6.2 6.2-16.4 0-22.6zM191.2 479.2l288-288L495 207c10.9 10.9 17 25.6 17 41s-6.1 30.1-17 41L289 495c-10.9 10.9-25.6 17-41 17s-30.1-6.1-41-17l-15.8-15.8zM17 305C6.1 294.1 0 279.4 0 264s6.1-30.1 17-41L223 17C233.9 6.1 248.6 0 264 0s30.1 6.1 41 17l15.8 15.8-288 288L17 305z"/></svg>
+        </div>
+
+        <ul class="links" hidden>
              <li><a href="#projects">Projects</a></li>
              <li><a href="#officers">Officers</a></li>
              <li><a href="#socials">Socials</a></li>
          </ul>
     </nav>
-<h1 class="computer">Computer Club</h1>
+
 <img class="wallpaper" src="./images/ClubWallpaper.jpeg">
 <div class="aboutrectangle"></div>
 <p class="about">
@@ -24,29 +40,66 @@
     hands-on projects. Join us in our quest to create innovative and<br>
     exciting tech together!<br>
 </p>
-<h1 class="officers">Officers</h1>
-<h1 class="sethpic">Seth<br>Secretary</h1>
-<h1 class="adaezepic">Adaeze<br>Marketer</h1>
-<h1 class="mariampic">Mariam<br>President</h1>
-<img class="seth" src="./images/SethSecretary.jpg">
-<img class="mariam" src="./images/PresidentMariam.jpg">
-<img class="adaeze" src="./images/MarketerAdaeze.jpg">
-<div class="projectrectangle"></div>
-<h1 class="projects">Projects</h1>
-<img class="refurbishing" src="./images/Refurbishing.jpg">
-<h1 class="refurb">Computer Refurbishing</h1>
-<img class="pepper" src="./images/Pepper.jpg">
-<h1 class="pep">Pepper</h1>
-<h1 class="social">Social Media</h1>
-<h4 class="follow">Follow us on our socials keep up with the program!</h4>
-<p class="disclaimer">
-    The views expressed on this are those of the Computer Club<br>
-    and are not endorsed by Lone Star College nor do they consitute<br>
-    and official communitcation from Lone Star College.<br>
-</p>
-<a href="https://www.instagram.com/lscmcomputerclub/?utm_source=ig_embed&amp%3Butm_campaign=loading">
-<img class="instagram" src="./images/InstagramLogo.png">
-</a>
+
+<main>
+    <section class="officers">
+        <h1>Officers</h1>
+        <div id="officers-container">
+
+            <div class="img-container">
+                    <img src="./images/SethSecretary.jpg" alt="" class="image">
+                    <div class="img-description-layer">
+                        <div class="image-text">
+                            <h1>Seth</h1>
+                            <p>Say Something</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="img-container">
+                        <img src="./images/PresidentMariam.jpg" alt="" class="image">
+                        <div class="img-description-layer">
+                            <div class="image-text">
+                                <h1>Miriam</h1>
+                                <p>Say Something</p>
+                            </div>
+                          </div>
+            </div>
+
+            <div class="img-container">
+                    <img src="./images/MarketerAdaeze.jpg" alt="" class="image"> 
+                    <div class="img-description-layer">
+                        <div class="image-text">
+                            <h1>Adaeze</h1>
+                            <p>Say Something</p>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+<!--
+    <div class="projectrectangle"></div>
+    <h1 class="projects">Projects</h1>
+    <img class="refurbishing" src="./images/Refurbishing.jpg">
+    <h1 class="refurb">Computer Refurbishing</h1>
+    <img class="pepper" src="./images/Pepper.jpg">
+    <h1 class="pep">Pepper</h1>
+    <h1 class="social">Social Media</h1>
+    <h4 class="follow">Follow us on our socials keep up with the program!</h4>
+    <p class="disclaimer">
+        The views expressed on this are those of the Computer Club<br>
+        and are not endorsed by Lone Star College nor do they consitute<br>
+        and official communitcation from Lone Star College.<br>
+    </p>
+    <a href="https://www.instagram.com/lscmcomputerclub/?utm_source=ig_embed&amp%3Butm_campaign=loading">
+        <img class="instagram" src="./images/InstagramLogo.png">
+    </a>
+
+-->
+
+</main>
 </body>
-    <script src="script.js"></script>
+<script src="./des/script.js"></script>
+
 </html>

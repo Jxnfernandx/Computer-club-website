@@ -1,30 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
 
+:root {
+  --marvel: "Marvel";
+  --press-start: "Press Start 2P"
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
   background-color: #212529;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 html {
   scroll-behavior: smooth;
 }
-nav{
-  color: #ffffff;
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
 }
+
+nav{
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+#burger-icon {
+  width: 2em;
+  height: 2em;
+  fill: #FFE156;
+}
+#hotdog-icon {
+  width: 2em;
+  height: 2em;
+  fill: #FF55FF;
+  display: none;
+}
+
+/*
 .navbar {
   border: 1px solid #ffffff;
   border-width: 1px 0;
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center; /* « The magic. */
+  text-align: center; /* « The magic. 
 }
 
-.navbar li {
-  display: inline; /* « More magic. */
+.nav {
+  display: flex;
+  background-color: red;
 }
 
 .navbar a {
-  display: inline-block; /* « Last bit of magic. */
+  display: inline-block; /* « Last bit of magic. 
   padding: 10px;
   font-family: "Press Start 2P";
   color: #ffffff;
@@ -191,3 +235,55 @@ h1, h4 {
   line-height: 30px;
   padding: 20px;
 }
+
+*/
+
+.officers {
+  text-align: center;
+}
+
+#officers-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Images and text box for images */
+.img-container {
+  position: relative;
+   width:100%;
+   flex: 0;
+}
+
+.img-description-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #CBEEF3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container:hover .img-description-layer {
+  opacity: .75;
+}
+
+
+@media only screen and (min-width: 600px) {
+  #burger-icon {
+    display: none;
+  }
+
+  #officers-container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+}
+
