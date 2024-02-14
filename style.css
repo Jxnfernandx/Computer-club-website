@@ -14,6 +14,10 @@
   font-family: var(--marvel);
 }
 
+h1, p {
+  color: #ffffff;
+}
+
 body {
   background-color: #212529;
   display: flex;
@@ -42,6 +46,11 @@ nav{
   padding: 0 2rem;
 }
 
+.logo img {
+  height: 4em;
+  width: 4em;
+}
+
 #burger-icon {
   width: 2em;
   height: 2em;
@@ -66,12 +75,10 @@ nav{
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 2;
   background: #212529;
   padding-top: 4rem;
-  transform: translateY(0);
   list-style-type: none;
-  
 }
 
 li a {
@@ -81,192 +88,34 @@ li a {
 
 }
 
-
-/*
-.navbar {
-  border: 1px solid #ffffff;
-  border-width: 1px 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center; /* « The magic. 
-}
-
-.nav {
-  display: flex;
-  background-color: red;
-}
-
-.navbar a {
-  display: inline-block; /* « Last bit of magic. 
-  padding: 10px;
-  font-family: "Press Start 2P";
-  color: #ffffff;
-  text-decoration: none;
-}
-
-h1, h4 {
-  color: #ffffff;
-  font-family: "Press Start 2P";
-}
-.about, nav {
-  font-family: "Marvel";
-  color: #ffffff;
-}
-
-.wallpaper {
-  width: 1440px;
-  height: 335px;
-  z-index: -1;
-  position: absolute;
-  top: 50px;
-}
-.computer{
-  top: 200px;
-  left: 550px;
-  position: absolute;
-}
-.about {
-  font-family: "Marvel";
-  color: #ffffff;
-  position: absolute;
-  top: 450px;
-  left: 600px;
-  line-height: 30px;
-}
 .aboutrectangle {
-  position: absolute;
-  left: 0;
-  top: 385px;
-  width: 1440px;
-  height: 310px;
-  background: #343A40;
-}
-.officers {
-  top: 700px;
-  left: 600px;
-  position: absolute;
-}
-.sethpic {
-  position: absolute;
-  top: 1050px;
-  left: 360px;
-  color: white;
-  font-family: "Marvel";
-}
-.mariampic {
-  position: absolute;
-  top: 1050px;
-  left: 660px;
-  color: white;
-  font-family: "Marvel";
-}
-.adaezepic {
-  position: absolute;
-  top: 1050px;
-  left: 1030px;
-  color: white;
-  font-family: "Marvel";
-}
-.seth {
-  position: absolute;
-  top: 800px;
-  height: 250px;
-  width: auto;
-  left: 300px;
-  border-radius: 20%;
-}
-.mariam {
-  position: absolute;
-  top: 800px;
-  height: 250px;
-  width: auto;
-  left: 600px;
-  border-radius: 20%;
-}
-.adaeze {
-  position: absolute;
-  top: 800px;
-  height: 250px;
-  width: auto;
-  left: 1000px;
-  border-radius: 20%;
-}
-.projectrectangle {
-  position: absolute;
-  left: 0;
-  top: 1300px;
-  width: 1440px;
-  height: 610px;
-  background: #343A40;
-}
-.projects {
-  top: 1300px;
-  left: 600px;
-  position: absolute;
-}
-.refurb {
-  position: absolute;
-  top: 1650px;
-  left: 260px;
-  color: white;
-  font-family: "Marvel";
-}
-.refurbishing {
-  width: auto;
-  height: 250px;
-  top: 1400px;
-  left: 300px;
-  position: absolute;
-  z-index: 1;
-  border-radius: 20%;
-
-}
-.pep {
-  position: absolute;
-  top: 1650px;
-  left: 990px;
-  color: white;
-  font-family: "Marvel";
-}
- .pepper {
-  width: auto;
-  height: 250px;
-  top: 1400px;
-  left: 940px;
-  position: absolute;
-  z-index: 1;
-  border-radius: 20%;
-}
-.social {
-  position: absolute;
-  top: 1920px;
-  left: 550px;
-  z-index: 1;
-}
-.instagram {
-  position: absolute;
-  top: 2000px;
-  left: 600px;
-  height: 250px;
-  width: auto;
-}
-.follow {
-  position: absolute;
-  top: 2300px;
-  left: 350px;
-}
-.disclaimer {
-  position: absolute;
-  top: 2400px;
-  color: #ffffff;
-  font-family: "Marvel";
-  left: 550px;
-  line-height: 30px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-*/
+.about-child {
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+.about-child h1 {
+  font-size: 4rem;
+  margin: 1em 10rem 0;
+  text-align: center;
+}
+
+.about-child p {
+  font-size: 1.5rem;
+  padding: 1rem 10rem 2em;
+  text-align: center;
+}
+
+.about-child h2 {
+  text-align: center;
+  font-size: 4em;
+  margin: 0 3em;
+  color: #FF55FF;
+}
 
 .section-header {
   color: white;
@@ -277,52 +126,57 @@ h1, h4 {
   text-align: center;
 }
 
-
 #officers-container {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
 /* Images and text box for images */
-.img-container {
-  position: relative;
-  width:100%;
-  
+.img-container img {
+  width: 16rem;
+  height: 20rem;
+  padding: 1rem;
 }
 
-
-.img-description-layer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #CBEEF3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer img {
+  height: 4em;
 }
 
-.img-container:hover .img-description-layer {
-  opacity: .75;
-}
-
-
+/* Display settings for desktop */ 
 @media only screen and (min-width: 600px) {
   #burger-icon {
     display: none;
   }
-
 
   #officers-container {
     display: flex;
     flex-direction: row;
     padding: 5em;
   }
-}
 
+  .about-child h2 {
+    color: blue;
+    overflow: hidden;
+    font-size: 4em;
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line *
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green }
+  }
+
+}

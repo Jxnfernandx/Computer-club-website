@@ -19,8 +19,9 @@ Users entering the website should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-
+- TypeScript
 
 ### Authors 
 
-- [Adaeze Owuna]
+- [Adaeze Owunna]
+- [Jonfernando Alfaro]
