@@ -12,6 +12,7 @@
   padding: 0;
   border: 0;
   font-family: var(--marvel);
+  color: #ffffff;
 }
 
 h1, p {
@@ -49,43 +50,48 @@ nav{
 .logo img {
   height: 4em;
   width: 4em;
+  margin: clamp(1.5rem, 5vw, 3.5rem);
 }
 
-#burger-icon {
-  width: 2em;
-  height: 2em;
-  fill: #FFE156;
-}
-#hotdog-icon {
-  width: 2em;
-  height: 2em;
-  fill: #FF55FF;
-  display: none;
-  z-index: 100;
-}
 
-#links {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
+#primary-navigation {
   position: fixed;
-  transition: transform 2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  background: #212529;
-  padding-top: 4rem;
-  list-style-type: none;
+  background: hsl(var(--clr-white) / .05);
+  backdrop-filter: blur(1rem);
+  z-index: 99;
+  inset: 0 0 0 30%;
+  padding: min(20rem, 15vh) 2rem;
+  margin: 0;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 500ms ease-in-out;
 }
 
-li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.8rem;
+#primary-navigation[data-visible="true"] {
+  transform: translateX(0);
+}
 
+.mobile-nav-toggle {
+  position: fixed;
+  display: block;
+  z-index: 2000;
+  right: 1rem;
+  top: 1rem;
+  background: transparent;
+  background-image: url(/icons/burger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 1;
+  width: 1.5rem;
+  border: 0;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+  background-image: url(/icons/closed.svg);
+}
+
+ul {
+  list-style-type: none;
 }
 
 .aboutrectangle {
@@ -142,12 +148,26 @@ footer img {
   height: 4em;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: smooth !important;
+  }
+}
+
 /* Display settings for desktop */ 
 @media only screen and (min-width: 600px) {
-  #burger-icon {
-    display: none;
-  }
+  .mobile-nav-toggle {
+  display: none;
+ }
 
+ul {
+  display: block;
+}
   #officers-container {
     display: flex;
     flex-direction: row;

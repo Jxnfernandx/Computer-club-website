@@ -1,24 +1,18 @@
-const burgerIcon = document.getElementById("burger-icon") as HTMLElement;
-const hotdogIcon = document.getElementById("hotdog-icon") as HTMLElement;
-const links = document.getElementById("links") as HTMLElement;
+const nav = document.getElementById("primary-navigation") as HTMLElement;
+const navToggle = document.querySelector(".mobile-nav-toggle") as HTMLElement;
 
+navToggle.addEventListener("click", () => {
+    const visibility = nav.getAttribute("data-visible");
+    
+    if (visibility === "false") {
+        nav.setAttribute("data-visible", true);
+        navToggle.setAttribute("aria-expanded", true);
+    }
+    else {
+        nav.setAttribute("data-visible", false);
+        navToggle.setAttribute("aria-expanded", false);
+    }
 
-// Define a function to toggle the display of icons
-function toggleIcons(iconToShow: HTMLElement, iconToHide: HTMLElement) {
-    iconToHide.style.display = "none";
-    iconToShow.style.display = "block";
-}
-
-// Add click event listeners to both icons
-burgerIcon.addEventListener("click", (event: MouseEvent) => {
-    toggleIcons(hotdogIcon, burgerIcon);
-    links.style.display = "flex";
-});
-
-hotdogIcon.addEventListener("click", (event: MouseEvent) => {
-    toggleIcons(burgerIcon, hotdogIcon);
-    links.style.display = "none";
-});
-
-
+    console.log(visibility)
+})
 

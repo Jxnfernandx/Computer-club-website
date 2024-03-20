@@ -1,18 +1,16 @@
 "use strict";
-const burgerIcon = document.getElementById("burger-icon");
-const hotdogIcon = document.getElementById("hotdog-icon");
-const links = document.getElementById("links");
-// Define a function to toggle the display of icons
-function toggleIcons(iconToShow, iconToHide) {
-    iconToHide.style.display = "none";
-    iconToShow.style.display = "block";
-}
-// Add click event listeners to both icons
-burgerIcon.addEventListener("click", (event) => {
-    toggleIcons(hotdogIcon, burgerIcon);
-    links.style.display = "flex";
-});
-hotdogIcon.addEventListener("click", (event) => {
-    toggleIcons(burgerIcon, hotdogIcon);
-    links.style.display = "none";
-});
+const nav = document.getElementById("primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+navToggle.addEventListener("click", () => {
+    const visibility = nav.getAttribute("data-visible");
+    
+    if (visibility === "false") {
+        nav.setAttribute("data-visible", true);
+        navToggle.setAttribute("aria-expanded", true);
+    }
+    else {
+        nav.setAttribute("data-visible", false);
+        navToggle.setAttribute("aria-expanded", false);
+    }
+})
